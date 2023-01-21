@@ -1,0 +1,80 @@
+/* Reset Styles */
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+/* Main styles */
+	body {
+		background-color: black;
+		font-family: Poppins;
+	}
+
+	.container {
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+		text-decoration-color: brown;
+		text-decoration-thickness: 4px;
+		text-underline-offset: 8px;
+	}
+
+/* Body */
+	/* Background */
+
+	/* Header */
+	.navbar {
+		margin: 60px auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	nav li {
+		display: inline-block;
+		margin: 0px 15px;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+
+	}
+
+	nav li:first-child {
+		margin-left: 0px;
+	}
+
+	nav li:last-child {
+		margin-right: 0px;
+	}
+
+	/* Inro Welcome */
+		.intro_welcome {
+			width: 50%;
+		}
+
+		.intro_welcome h1 {
+			font-size:  60px;
+		}
+
+	/* Solutions */
+
+		.solutions li {
+			width: 200px;
+			height: 300px;
+			margin: 0 60px;
+			display: inline-block;
+			background-color: rgb(20, 20, 20);
+		}
