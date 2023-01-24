@@ -8,6 +8,7 @@
 	body {
 		background-color: black;
 		font-family: Poppins;
+		
 	}
 
 	.container {
@@ -15,7 +16,7 @@
 		margin: 0 auto;
 	}
 
-	h1 {
+	h1, h2, h3, h4, h5 {
 		color: rgb(255, 255, 255);
 		font-weight: bold;
 	}
@@ -43,7 +44,7 @@
 
 	nav li {
 		display: inline-block;
-		margin: 0px 15px;
+		margin: 0px 16px;
 	}
 
 	nav a {
@@ -71,7 +72,7 @@
 		.intro_welcome_title:before {
 			display: block;
 			width: 80px;
-			height: 3px;
+			height: 4px;
 			background-color: brown;
 			content: "";
 			margin: 154px 0px 64px 0px;
@@ -94,12 +95,71 @@
 	/* Solutions */
 	.solutions {
 		margin-top: 80px;
+		text-align: center;
 	}
 	
 	.solutions li {
-		width: 200px;
-		height: 300px;
-		margin: 0 60px;
+		width: 340px;
+		height: 296px;
 		display: inline-block;
+		margin: 0 32px;
 		background-color: rgb(20, 20, 20);
+		text-align: left;
+	}
+
+	.solutions li:first-child {
+		margin-left: 0px;
+	}
+
+	.solutions li:last-child {
+		margin-right: 0px;
+	}
+
+	.solutions a {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+	}
+
+	.solution_content {
+		margin: 32px 32px;
+	}
+
+	.solutions h3:after {
+		display: block;
+		width: 48px;
+		height: 2px;
+		background-color: brown;
+		content: "";
+		margin: 4px 0px 32px 0px;
+	}
+
+	.solution_icon img {
+		width: 32px;
+		margin-bottom: 32px;
+	}
+/* Services */
+	.services h2:before {
+		display: block;
+		width: 40px;
+		height: 2px;
+		background-color: brown;
+		content: "";
+		margin: 120px 0px 32px 0px;
+	}
+
+	.services {
+		text-align: center;
+	}
+
+	.services li {
+		width: 340px;
+		height: 80px;
+		display: inline-block;
+		margin: 8px;
+		background-color: rgb(20, 20, 20);
+		text-align: left;
+	}
+
+	.services img {
+		width: 24px;
 	}
