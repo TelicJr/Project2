@@ -1,27 +1,49 @@
-/* Reset Styles */
-	* {
-		margin: 0;
-		padding: 0;
-	}
+html {
+	/* сохрание размеров при паддингах/бордерах и тд */
+	box-sizing: border-box;
+}
 
-/* Main styles */
+*, *::after, *::before {
+	/* Унаследовали BB от родителя */
+	box-sizing: inherit;
+	/* Сбросили стили */
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	/* обеспечили картинкам адаптив */
+	max-width: 100%;
+}
+
+/* MAIN STYLES */
 	body {
 		background-color: black;
 		font-family: Poppins;
-	}
-
-	.container {
-		width: 1200px;
-		margin: 0 auto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.4;
+		color: white;
+		text-decoration: none;
 	}
 
 	h1, h2, h3, h4, h5 {
-		color: rgb(255, 255, 255);
+		color: inherit;
 		font-weight: bold;
 	}
 
+	h1 {
+		font-size: 4em;
+	 }
+
 	a {
-		text-decoration: none;
+		color: inherit;
+		text-decoration: inherit;
+	}
+
+	li {
+		list-style: none;
 	}
 
 	a:hover {
@@ -32,82 +54,93 @@
 	}
 
 /* Body */
-	/* Background */
+.container {
+	max-width: 1264px;
+	padding: 0 64px;
+	margin: 0 auto;
+}
 
 	/* Header */
-	.navbar {
-		margin: 60px auto;
+	.nav {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
+		height: 200px;
 	}
 
+	.navlist {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0 20px;
+	}
+	
 	.navlogo {
-		width: 120px;
+		display: flex;
+		width: 200px;
 	}
 
-	nav li {
-		margin: 0px 16px;
-		display: inline-block;
+
+
+
+	/* Main */
+
+	.intro_welcome_title::before {
+		display: block;
+		width: 80px;
+		height: 4px;
+		background-color: #ff0340;
+		content: "";
+		margin: 50px 0px 64px 0px;
+	 }
+	
+	.intro_welcome {
+		width: 50%;
 	}
 
-	nav a {
-		text-decoration: none;
+	.intro_button {
+		margin: 64px 0px;
+		width: 192px;
+		height: 64px;
+		border-style: solid;
+		border-width: 4px;
+		border-color: #ff0340;
+		background-color: inherit;
 		color: rgb(255, 255, 255);
+		font-size: 1em;
+		font-weight: bold;
 	}
 
-	nav li:first-child {
-		margin-left: 0px;
-	}
 
-	nav li:last-child {
-		margin-right: 0px;
-	}
-
-	/* Inro Welcome */
+	/* Inro Welcome
 		.intro_welcome {
 			width: 50%;
 		}
 
 		.intro_welcome h1 {
-			font-size: 72px;
+			font-size: 4em;
 		}
 
-		.intro_welcome_title:before {
-			display: block;
-			width: 80px;
-			height: 4px;
-			background-color: #ff0340;
-			content: "";
-			margin: 154px 0px 64px 0px;
-		 }
+
 
 		 .intro_button {
-			width: 192px;
-			height: 64px;
-			margin: 64px 0px;
-			border-style: solid;
-			border-width: 4px;
-			border-color: #ff0340;
-			background-color: black;
-			color: rgb(255, 255, 255);
+
 			font-size: 16px;
 			font-family: Poppins;
 			font-weight: regular;
-		 }
+		 } */
 
-	/* Solutions */
+	/* Solutions
 	.solutions {
 		margin-top: 80px;
 	}
 	
 	.solutions ul {
+		display: flex;
 	}
 
-	/* .solutions li {
-		width: auto;
+.solutions li {
 		height: 296px;
-		display: inline-block;
 		margin: 0 32px;
 		background-color: rgb(20, 20, 20);
 		text-align: left;
@@ -143,7 +176,7 @@
 		width: 32px;
 		margin-bottom: 32px;
 	}
-	 */
+
 /* Services */
 	/* .services h2:before {
 		display: block;
@@ -154,17 +187,14 @@
 		margin: 120px 0px 32px 0px;
 	}
 
-	.services {
-		text-align: center;
+	.services ul {
+		display: flexbox;
 	}
 
 	.services li {
-		width: 340px;
-		height: 80px;
-		display: inline-block;
-		margin: 8px;
+		height: 160px;
+		width: auto;
 		background-color: rgb(20, 20, 20);
-		text-align: left;
 	}
 
 	.services img {
