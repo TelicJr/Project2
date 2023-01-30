@@ -16,6 +16,7 @@ img {
 	max-width: 100%;
 }
 
+/**************************************/
 /* MAIN STYLES */
 	body {
 		background-color: black;
@@ -37,6 +38,14 @@ img {
 		font-size: 4em;
 	 }
 
+	h2 {
+	font-size: 2.5em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
 	a {
 		color: inherit;
 		text-decoration: inherit;
@@ -53,14 +62,16 @@ img {
 		text-underline-offset: 8px;
 	}
 
+/**************************************/
 /* Body */
-.container {
-	max-width: 1264px;
-	padding: 0 64px;
-	margin: 0 auto;
-}
+	.container {
+		max-width: 1264px;
+		padding: 0 64px;
+		margin: 0 auto;
+	}
 
-	/* Header */
+/**************************************/
+/* Header */
 	.nav {
 		display: flex;
 		flex-wrap: wrap;
@@ -74,16 +85,14 @@ img {
 		flex-wrap: wrap;
 		gap: 0 20px;
 	}
-	
+
 	.navlogo {
 		display: flex;
 		width: 200px;
 	}
 
-
-
-
-	/* Main */
+/**************************************/
+/* Main */
 
 	.intro_welcome_title::before {
 		display: block;
@@ -92,8 +101,12 @@ img {
 		background-color: #ff0340;
 		content: "";
 		margin: 50px 0px 64px 0px;
-	 }
-	
+		}
+
+	.intro {
+		min-height: calc(100vh - 200px);
+	}
+
 	.intro_welcome {
 		width: 50%;
 	}
@@ -111,71 +124,87 @@ img {
 		font-weight: bold;
 	}
 
-
-	/* Inro Welcome
-		.intro_welcome {
-			width: 50%;
+	/**************************************/
+	/* Solutions */
+		
+		.solutions ul {
+			display: flex;
+			flex-direction: row;
 		}
 
-		.intro_welcome h1 {
-			font-size: 4em;
+		.solutions li {
+			margin: 0 24px;
+			padding: 48px 32px;
+			background-color: rgb(30, 30, 30);
 		}
 
+		.solutions li:first-child {
+			margin-left: 0px;
+		}
 
+		.solutions li:last-child {
+			margin-right: 0px;
+		}
 
-		 .intro_button {
+		.solution_icon {
+			width: 40px;
+			margin-bottom: 48px;
+		}
 
-			font-size: 16px;
-			font-family: Poppins;
-			font-weight: regular;
-		 } */
+		.solutions a {
+			text-decoration: none;
+		}
 
-	/* Solutions
-	.solutions {
-		margin-top: 80px;
+		.solutions h3:after {
+			display: block;
+			width: 48px;
+			height: 2px;
+			background-color: #ff0340;
+			content: "";
+			margin: 4px 0px 32px 0px;
+		}
+
+		.solutions::after {
+			display: block;
+			width: 48px;
+			height: 2px;
+			background-color: #ff0340;
+			content: "";
+			margin: 96px 0px 64px 0px;
+			}
+
+	/**************************************/
+	/* Services */
+
+	.second_title {
+		margin-bottom: 64px;
 	}
 	
-	.solutions ul {
+	.services_subtitle {
+		margin: 16px 0 32px 0;
+		text-transform: uppercase;
+		color: #ff0340;
+		font-weight: 600;
+	}
+
+	.allservises ul{
 		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
-.solutions li {
-		height: 296px;
-		margin: 0 32px;
-		background-color: rgb(20, 20, 20);
-		text-align: left;
+	.allservises li {
+		margin: 0 20px;
+
 	}
 
-	.solutions li:first-child {
-		margin-left: 0px;
-	}
 
-	.solutions li:last-child {
-		margin-right: 0px;
-	}
 
-	.solutions a {
-		text-decoration: none;
-		color: rgb(255, 255, 255);
-	}
 
-	.solution_content {
-		margin: 32px 32px;
-	}
 
-	.solutions h3:after {
-		display: block;
-		width: 48px;
-		height: 2px;
-		background-color: #ff0340;
-		content: "";
-		margin: 4px 0px 32px 0px;
-	}
 
-	.solution_icon img {
-		width: 32px;
-		margin-bottom: 32px;
-	}
+
+	/*
 
 /* Services */
 	/* .services h2:before {
